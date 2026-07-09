@@ -3,12 +3,12 @@ import { AnswerResult, RankInfo } from "@/lib/oto-guesser/types";
 import { noteToMidi } from "@/lib/shared/noteLogic";
 
 // 出題範囲はOtoGuesser専用（鍵盤の表示範囲=C0〜B8とは別）
-const TARGET_MIN_OCTAVE = 2;
+const TARGET_MIN_OCTAVE = 3; // ★ 2から3に変更（C3からスタート）
 const TARGET_MAX_OCTAVE = 6;
-const MIN_MIDI = noteToMidi("C", TARGET_MIN_OCTAVE); // 36
+const MIN_MIDI = noteToMidi("C", TARGET_MIN_OCTAVE); // 48 になります
 const MAX_MIDI = noteToMidi("C", TARGET_MAX_OCTAVE); // 84
 
-/** C2〜C6の範囲でランダムなMIDIノート番号を返す */
+/** C3〜C6の範囲でランダムなMIDIノート番号を返す */
 export function generateRandomMidi(): number {
   return MIN_MIDI + Math.floor(Math.random() * (MAX_MIDI - MIN_MIDI + 1));
 }
