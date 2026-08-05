@@ -13,7 +13,7 @@ const tools = [
   { label: "HTML Preview", href: "/html-preview", available: true }, //HTMLコードを入力するとそのままプレビューできるツール。
   { label: "Hz変換", href: "/hz-henkan", available: true }, //ピアノの音を選択してその音の周波数を表示するツール。
   { label: "リポジトリツリーハウス", href: "#", available: false }, // リポジトリのurlを入力（またはユーザー名とリポジトリ名）することで瞬時にテキスト形式のツリーを出力するツール。
-  { label: "運ゲー", href: "#", available: false }, //あらゆる種類を設けた運ゲーツール。
+  { label: "運ゲー", href: "/unge", available: true }, //あらゆる種類を設けた運ゲーツール。
   { label: "文章生成疑似AI", href: "/bunsho-seisei", available: true }, //理論で長文を張り付けると、次に来る単語などの確率から勝手に適当な文章を生成する疑似aiツール。
   { label: "タイピングピアノ", href: "#", available: false }, //キーボードでピアノの演奏ができる多機能ピアノツール。
 ];
